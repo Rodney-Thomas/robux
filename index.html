@@ -38,6 +38,7 @@
   function userGet(){
     return localStorage.getItem("user");
   }
+  localStorage.setItem("rbxAmount", "500");
   document.getElementById("head").innerHTML = userGet();
   function rbxGet(){
     return localStorage.getItem("rbxAmount");
