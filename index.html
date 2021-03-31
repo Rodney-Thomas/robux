@@ -21,23 +21,16 @@
       <input id="user" placeholder="Username"><br>
       </p>
     </form>
-    <button class="w3-button w3-white w3-border w3-border-blue" onclick="user()">Submit</button>
+    <button class="w3-button w3-white w3-border w3-border-blue" onclick="store()">Submit</button>
       <br>
     </div>
     <br>
-    
-    <script type="text/javascript">
-     
-      
-      function user() {
-        var inputUser = document.getElementById('user');
-        localStorage.setItem('username', inputUser.value);
-      }
-      var user = document.getElementById('head');
-      user.innerHTML = localStorage.getItem('username');
-      
-      var test = localStorage.getItem('username');
-      alert(test);
-    </script>
+
+<script  type="text/javascript">
+  function store(){
+     var inputEmail= document.getElementById("user");
+     localStorage.setItem("user", inputEmail.value);
+    }
+</script>
   </body>
 </html>
