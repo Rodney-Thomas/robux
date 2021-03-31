@@ -22,7 +22,7 @@
       </p>
     </form>
     <button class="w3-button w3-white w3-border w3-border-blue" onclick="store()">Submit</button>
-      <br>
+      <br><br!
     </div>
     <br>
 
@@ -34,7 +34,7 @@
   function userGet(){
     return localStorage.getItem("user");
   }
-  alert(userGet());
+  document.getElementById("head").innerHTML = userGet();
 </script>
   </body>
 </html>
