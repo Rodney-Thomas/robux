@@ -1,4 +1,21 @@
 <!DOCTYPE html>
 <html>
-
+  <head>
+    
+  </head>
+  <body>
+    <form>
+      <label for="user">
+      <input id="user"><br>
+      </label>
+    </form>
+    <button onclick="user()">Submit</button>
+    
+    <script type="text/javascript">
+      function user() {
+        var inputUser = document.getElementById('user');
+        localStorage.setItem('username', inputUser.value);
+      }
+    </script>
+  </body>
 </html>
