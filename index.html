@@ -10,6 +10,10 @@
   </head>
   <body>
     <br>
+    <div id="head" style="text-align:center;">
+      
+    </div>
+    <br>
     <div class="w3-card-2" style="width:50;">
     <form>
       <br>
@@ -27,6 +31,8 @@
         var inputUser = document.getElementById('user');
         localStorage.setItem('username', inputUser.value);
       }
+      var user = document.getElementById('head');
+      user.innerHTML = "<h2>" + localStorage.getItem('username');
     </script>
   </body>
 </html>
