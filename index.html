@@ -9,7 +9,7 @@
     </style>
   </head>
   <body>
-    <div class="w3-bar w3-blue"><p>ROBUX: </p><p id="rbx"></div>
+    <div class="w3-bar w3-blue"><p>ROBUX: </p><p id="rbx"></p></div>
     <br>
     <p>
     <h2>Username:</h2>
@@ -42,6 +42,7 @@
   function rbxGet(){
     return localStorage.getItem("rbxAmount");
   }
+  document.getElementById("rbx").innerHTML = rbxGet();
 </script>
   </body>
 </html>
